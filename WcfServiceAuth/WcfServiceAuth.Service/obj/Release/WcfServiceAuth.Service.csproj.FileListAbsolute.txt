@@ -1,0 +1,4 @@
+D:\Antony\Projects\WcfServiceAuth\WcfServiceAuth.Service\bin\WcfServiceAuth.Service.dll
+D:\Antony\Projects\WcfServiceAuth\WcfServiceAuth.Service\bin\WcfServiceAuth.Service.pdb
+D:\Antony\Projects\WcfServiceAuth\WcfServiceAuth.Service\obj\Release\WcfServiceAuth.Service.dll
+D:\Antony\Projects\WcfServiceAuth\WcfServiceAuth.Service\obj\Release\WcfServiceAuth.Service.pdb

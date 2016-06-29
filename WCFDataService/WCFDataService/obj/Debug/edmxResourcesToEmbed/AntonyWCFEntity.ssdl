@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AntonyModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="AntonyModelStoreContainer">
+    <EntitySet Name="ChildTable" EntityType="AntonyModel.Store.ChildTable" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Dept" EntityType="AntonyModel.Store.Dept" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ParentTable" EntityType="AntonyModel.Store.ParentTable" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Table_1" EntityType="AntonyModel.Store.Table_1" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__ChildTabl__Paren__108B795B" Association="AntonyModel.Store.FK__ChildTabl__Paren__108B795B">
+      <End Role="ParentTable" EntitySet="ParentTable" />
+      <End Role="ChildTable" EntitySet="ChildTable" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ChildTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Age" Type="int" />
+    <Property Name="ParentId" Type="int" />
+  </EntityType>
+  <EntityType Name="Dept">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Dept" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ParentTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Table_1">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Name" Type="nchar" Nullable="false" MaxLength="100" />
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <Association Name="FK__ChildTabl__Paren__108B795B">
+    <End Role="ParentTable" Type="AntonyModel.Store.ParentTable" Multiplicity="0..1" />
+    <End Role="ChildTable" Type="AntonyModel.Store.ChildTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ParentTable">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ChildTable">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

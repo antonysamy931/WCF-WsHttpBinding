@@ -1,0 +1,61 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices m:DataServiceVersion="1.0" m:MaxDataServiceVersion="2.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+    <Schema Namespace="AntonyModel" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <EntityType Name="Table_1">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" p6:StoreGeneratedPattern="Identity" xmlns:p6="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+      </EntityType>
+      <EntityType Name="Dept">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" p6:StoreGeneratedPattern="Identity" xmlns:p6="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="Dept1" Type="Edm.String" MaxLength="50" FixedLength="false" Unicode="true" />
+      </EntityType>
+      <EntityType Name="ChildTable">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" p6:StoreGeneratedPattern="Identity" xmlns:p6="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="Age" Type="Edm.Int32" />
+        <Property Name="ParentId" Type="Edm.Int32" />
+        <NavigationProperty Name="ParentTable" Relationship="AntonyModel.FK__ChildTabl__Paren__108B795B" ToRole="ParentTable" FromRole="ChildTable" />
+      </EntityType>
+      <EntityType Name="ParentTable">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" p6:StoreGeneratedPattern="Identity" xmlns:p6="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="Name" Type="Edm.String" MaxLength="50" FixedLength="false" Unicode="false" />
+        <NavigationProperty Name="ChildTables" Relationship="AntonyModel.FK__ChildTabl__Paren__108B795B" ToRole="ChildTable" FromRole="ParentTable" />
+      </EntityType>
+      <Association Name="FK__ChildTabl__Paren__108B795B">
+        <End Type="AntonyModel.ParentTable" Role="ParentTable" Multiplicity="0..1" />
+        <End Type="AntonyModel.ChildTable" Role="ChildTable" Multiplicity="*" />
+        <ReferentialConstraint>
+          <Principal Role="ParentTable">
+            <PropertyRef Name="Id" />
+          </Principal>
+          <Dependent Role="ChildTable">
+            <PropertyRef Name="ParentId" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+    </Schema>
+    <Schema Namespace="WCFDataService" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <EntityContainer Name="AntonyEntities" m:IsDefaultEntityContainer="true" p6:LazyLoadingEnabled="true" xmlns:p6="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntitySet Name="Table_1" EntityType="AntonyModel.Table_1" />
+        <EntitySet Name="Depts" EntityType="AntonyModel.Dept" />
+        <EntitySet Name="ChildTables" EntityType="AntonyModel.ChildTable" />
+        <EntitySet Name="ParentTables" EntityType="AntonyModel.ParentTable" />
+        <AssociationSet Name="FK__ChildTabl__Paren__108B795B" Association="AntonyModel.FK__ChildTabl__Paren__108B795B">
+          <End Role="ChildTable" EntitySet="ChildTables" />
+          <End Role="ParentTable" EntitySet="ParentTables" />
+        </AssociationSet>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

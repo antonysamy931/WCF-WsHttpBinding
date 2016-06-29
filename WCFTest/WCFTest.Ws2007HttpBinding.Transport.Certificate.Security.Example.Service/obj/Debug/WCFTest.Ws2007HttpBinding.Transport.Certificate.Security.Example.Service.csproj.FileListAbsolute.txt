@@ -1,0 +1,5 @@
+D:\Antony\Projects\WCFTest\WCFTest.Ws2007HttpBinding.Transport.Certificate.Security.Example.Service\bin\WCFTest.Ws2007HttpBinding.Transport.Certificate.Security.Example.Service.dll
+D:\Antony\Projects\WCFTest\WCFTest.Ws2007HttpBinding.Transport.Certificate.Security.Example.Service\bin\WCFTest.Ws2007HttpBinding.Transport.Certificate.Security.Example.Service.pdb
+D:\Antony\Projects\WCFTest\WCFTest.Ws2007HttpBinding.Transport.Certificate.Security.Example.Service\obj\Debug\WCFTest.Ws2007HttpBinding.Transport.Certificate.Security.Example.Service.csprojResolveAssemblyReference.cache
+D:\Antony\Projects\WCFTest\WCFTest.Ws2007HttpBinding.Transport.Certificate.Security.Example.Service\obj\Debug\WCFTest.Ws2007HttpBinding.Transport.Certificate.Security.Example.Service.dll
+D:\Antony\Projects\WCFTest\WCFTest.Ws2007HttpBinding.Transport.Certificate.Security.Example.Service\obj\Debug\WCFTest.Ws2007HttpBinding.Transport.Certificate.Security.Example.Service.pdb

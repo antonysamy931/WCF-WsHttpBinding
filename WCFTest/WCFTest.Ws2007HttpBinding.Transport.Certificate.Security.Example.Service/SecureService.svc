@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WCFTest.Ws2007HttpBinding.Transport.Certificate.Security.Example.Service.SecureService" CodeBehind="SecureService.svc.cs" %>

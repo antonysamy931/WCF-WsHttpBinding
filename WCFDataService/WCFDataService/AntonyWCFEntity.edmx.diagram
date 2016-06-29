@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6d365e5b46b44128ac5dfc54b54e97b3" Name="Diagram1" ZoomLevel="81" >
+        <EntityTypeShape EntityType="AntonyModel.Table_1" Width="1.5" PointX="5.375" PointY="1.75" />
+        <EntityTypeShape EntityType="AntonyModel.Dept" Width="1.5" PointX="7.6986089477774726" PointY="26.403353405372869" />
+        <EntityTypeShape EntityType="AntonyModel.ChildTable" Width="1.5" PointX="4.5" PointY="3.625" />
+        <EntityTypeShape EntityType="AntonyModel.ParentTable" Width="1.5" PointX="7.5" PointY="5.125" />
+        <AssociationConnector Association="AntonyModel.FK__ChildTabl__Paren__108B795B" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

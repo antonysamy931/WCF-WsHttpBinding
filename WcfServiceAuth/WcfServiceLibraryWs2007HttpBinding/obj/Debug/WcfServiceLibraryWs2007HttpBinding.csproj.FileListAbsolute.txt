@@ -1,0 +1,5 @@
+D:\Antony\Projects\WcfServiceAuth\WcfServiceLibraryWs2007HttpBinding\bin\WcfServiceLibraryWs2007HttpBinding.dll
+D:\Antony\Projects\WcfServiceAuth\WcfServiceLibraryWs2007HttpBinding\bin\WcfServiceLibraryWs2007HttpBinding.pdb
+D:\Antony\Projects\WcfServiceAuth\WcfServiceLibraryWs2007HttpBinding\obj\Debug\WcfServiceLibraryWs2007HttpBinding.dll
+D:\Antony\Projects\WcfServiceAuth\WcfServiceLibraryWs2007HttpBinding\obj\Debug\WcfServiceLibraryWs2007HttpBinding.pdb
+D:\Antony\Projects\WcfServiceAuth\WcfServiceLibraryWs2007HttpBinding\obj\Debug\WcfServiceLibraryWs2007HttpBinding.csprojResolveAssemblyReference.cache

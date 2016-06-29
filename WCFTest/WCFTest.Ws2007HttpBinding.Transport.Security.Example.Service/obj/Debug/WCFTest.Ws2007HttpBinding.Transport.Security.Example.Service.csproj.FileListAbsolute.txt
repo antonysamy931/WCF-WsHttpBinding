@@ -1,0 +1,4 @@
+D:\Antony\Projects\WCFTest\WCFTest.Ws2007HttpBinding.Transport.Security.Example.Service\bin\WCFTest.Ws2007HttpBinding.Transport.Security.Example.Service.dll
+D:\Antony\Projects\WCFTest\WCFTest.Ws2007HttpBinding.Transport.Security.Example.Service\bin\WCFTest.Ws2007HttpBinding.Transport.Security.Example.Service.pdb
+D:\Antony\Projects\WCFTest\WCFTest.Ws2007HttpBinding.Transport.Security.Example.Service\obj\Debug\WCFTest.Ws2007HttpBinding.Transport.Security.Example.Service.dll
+D:\Antony\Projects\WCFTest\WCFTest.Ws2007HttpBinding.Transport.Security.Example.Service\obj\Debug\WCFTest.Ws2007HttpBinding.Transport.Security.Example.Service.pdb

@@ -1,0 +1,5 @@
+D:\Antony\Projects\WcfServiceAuth\ConsoleApplicationWs2007Binding\bin\Debug\ConsoleApplicationWs2007Binding.exe.config
+D:\Antony\Projects\WcfServiceAuth\ConsoleApplicationWs2007Binding\bin\Debug\ConsoleApplicationWs2007Binding.exe
+D:\Antony\Projects\WcfServiceAuth\ConsoleApplicationWs2007Binding\bin\Debug\ConsoleApplicationWs2007Binding.pdb
+D:\Antony\Projects\WcfServiceAuth\ConsoleApplicationWs2007Binding\obj\Debug\ConsoleApplicationWs2007Binding.exe
+D:\Antony\Projects\WcfServiceAuth\ConsoleApplicationWs2007Binding\obj\Debug\ConsoleApplicationWs2007Binding.pdb

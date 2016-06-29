@@ -1,0 +1,5 @@
+D:\Antony\Projects\WcfServiceAuth\WcfServiceAuth.Service1\bin\WcfServiceAuth.Service1.dll
+D:\Antony\Projects\WcfServiceAuth\WcfServiceAuth.Service1\bin\WcfServiceAuth.Service1.pdb
+D:\Antony\Projects\WcfServiceAuth\WcfServiceAuth.Service1\obj\Debug\WcfServiceAuth.Service1.dll
+D:\Antony\Projects\WcfServiceAuth\WcfServiceAuth.Service1\obj\Debug\WcfServiceAuth.Service1.pdb
+D:\Antony\Projects\WcfServiceAuth\WcfServiceAuth.Service1\obj\Debug\WcfServiceAuth.Service1.csprojResolveAssemblyReference.cache

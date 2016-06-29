@@ -1,0 +1,6 @@
+D:\Antony\Projects\WcfServiceAuth\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe.config
+D:\Antony\Projects\WcfServiceAuth\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+D:\Antony\Projects\WcfServiceAuth\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+D:\Antony\Projects\WcfServiceAuth\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe
+D:\Antony\Projects\WcfServiceAuth\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb
+D:\Antony\Projects\WcfServiceAuth\ConsoleApplication2\obj\Debug\ConsoleApplication2.csprojResolveAssemblyReference.cache

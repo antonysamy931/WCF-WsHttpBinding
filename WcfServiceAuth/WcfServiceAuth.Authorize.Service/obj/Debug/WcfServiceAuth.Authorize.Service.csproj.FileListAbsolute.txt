@@ -1,0 +1,5 @@
+D:\Antony\Projects\WcfServiceAuth\WcfServiceAuth.Authorize.Service\bin\WcfServiceAuth.Authorize.Service.dll
+D:\Antony\Projects\WcfServiceAuth\WcfServiceAuth.Authorize.Service\bin\WcfServiceAuth.Authorize.Service.pdb
+D:\Antony\Projects\WcfServiceAuth\WcfServiceAuth.Authorize.Service\obj\Debug\WcfServiceAuth.Authorize.Service.dll
+D:\Antony\Projects\WcfServiceAuth\WcfServiceAuth.Authorize.Service\obj\Debug\WcfServiceAuth.Authorize.Service.pdb
+D:\Antony\Projects\WcfServiceAuth\WcfServiceAuth.Authorize.Service\obj\Debug\WcfServiceAuth.Authorize.Service.csprojResolveAssemblyReference.cache

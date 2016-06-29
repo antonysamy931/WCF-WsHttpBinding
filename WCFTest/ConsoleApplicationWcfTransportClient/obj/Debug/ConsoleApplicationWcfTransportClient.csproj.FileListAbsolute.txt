@@ -1,0 +1,6 @@
+D:\Antony\Projects\WCFTest\ConsoleApplicationWcfTransportClient\bin\Debug\ConsoleApplicationWcfTransportClient.exe.config
+D:\Antony\Projects\WCFTest\ConsoleApplicationWcfTransportClient\bin\Debug\ConsoleApplicationWcfTransportClient.exe
+D:\Antony\Projects\WCFTest\ConsoleApplicationWcfTransportClient\bin\Debug\ConsoleApplicationWcfTransportClient.pdb
+D:\Antony\Projects\WCFTest\ConsoleApplicationWcfTransportClient\obj\Debug\ConsoleApplicationWcfTransportClient.exe
+D:\Antony\Projects\WCFTest\ConsoleApplicationWcfTransportClient\obj\Debug\ConsoleApplicationWcfTransportClient.pdb
+D:\Antony\Projects\WCFTest\ConsoleApplicationWcfTransportClient\obj\Debug\ConsoleApplicationWcfTransportClient.csprojResolveAssemblyReference.cache

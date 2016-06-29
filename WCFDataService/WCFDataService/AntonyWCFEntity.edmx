@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AntonyModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="AntonyModelStoreContainer">
+          <EntitySet Name="ChildTable" EntityType="AntonyModel.Store.ChildTable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Dept" EntityType="AntonyModel.Store.Dept" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ParentTable" EntityType="AntonyModel.Store.ParentTable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Table_1" EntityType="AntonyModel.Store.Table_1" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__ChildTabl__Paren__108B795B" Association="AntonyModel.Store.FK__ChildTabl__Paren__108B795B">
+            <End Role="ParentTable" EntitySet="ParentTable" />
+            <End Role="ChildTable" EntitySet="ChildTable" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ChildTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Age" Type="int" />
+          <Property Name="ParentId" Type="int" />
+        </EntityType>
+        <EntityType Name="Dept">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Dept" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ParentTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Table_1">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Name" Type="nchar" Nullable="false" MaxLength="100" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <Association Name="FK__ChildTabl__Paren__108B795B">
+          <End Role="ParentTable" Type="AntonyModel.Store.ParentTable" Multiplicity="0..1" />
+          <End Role="ChildTable" Type="AntonyModel.Store.ChildTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ParentTable">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ChildTable">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AntonyModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="AntonyEntities" p1:LazyLoadingEnabled="true" >
+          <EntitySet Name="Table_1" EntityType="AntonyModel.Table_1" />
+          <EntitySet Name="Depts" EntityType="AntonyModel.Dept" />
+          <EntitySet Name="ChildTables" EntityType="AntonyModel.ChildTable" />
+          <EntitySet Name="ParentTables" EntityType="AntonyModel.ParentTable" />
+          <AssociationSet Name="FK__ChildTabl__Paren__108B795B" Association="AntonyModel.FK__ChildTabl__Paren__108B795B">
+            <End Role="ParentTable" EntitySet="ParentTables" />
+            <End Role="ChildTable" EntitySet="ChildTables" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Table_1">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Dept">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Dept1" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ChildTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="Age" />
+          <Property Type="Int32" Name="ParentId" />
+          <NavigationProperty Name="ParentTable" Relationship="AntonyModel.FK__ChildTabl__Paren__108B795B" FromRole="ChildTable" ToRole="ParentTable" />
+        </EntityType>
+        <EntityType Name="ParentTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ChildTables" Relationship="AntonyModel.FK__ChildTabl__Paren__108B795B" FromRole="ParentTable" ToRole="ChildTable" />
+        </EntityType>
+        <Association Name="FK__ChildTabl__Paren__108B795B">
+          <End Type="AntonyModel.ParentTable" Role="ParentTable" Multiplicity="0..1" />
+          <End Type="AntonyModel.ChildTable" Role="ChildTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ParentTable">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ChildTable">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AntonyModelStoreContainer" CdmEntityContainer="AntonyEntities" >
+          <EntitySetMapping Name="Table_1">
+            <EntityTypeMapping TypeName="AntonyModel.Table_1">
+              <MappingFragment StoreEntitySet="Table_1">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Depts">
+            <EntityTypeMapping TypeName="AntonyModel.Dept">
+              <MappingFragment StoreEntitySet="Dept">
+                <ScalarProperty Name="Dept1" ColumnName="Dept" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ChildTables">
+            <EntityTypeMapping TypeName="AntonyModel.ChildTable">
+              <MappingFragment StoreEntitySet="ChildTable">
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ParentTables">
+            <EntityTypeMapping TypeName="AntonyModel.ParentTable">
+              <MappingFragment StoreEntitySet="ParentTable">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

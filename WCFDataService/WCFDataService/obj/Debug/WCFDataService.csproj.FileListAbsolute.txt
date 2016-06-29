@@ -1,0 +1,17 @@
+D:\Antony\Projects\WCFDataService\WCFDataService\bin\WCFDataService.dll
+D:\Antony\Projects\WCFDataService\WCFDataService\bin\WCFDataService.pdb
+D:\Antony\Projects\WCFDataService\WCFDataService\bin\EntityFramework.dll
+D:\Antony\Projects\WCFDataService\WCFDataService\bin\Microsoft.Data.Edm.dll
+D:\Antony\Projects\WCFDataService\WCFDataService\bin\Microsoft.Data.OData.dll
+D:\Antony\Projects\WCFDataService\WCFDataService\bin\Microsoft.Data.Services.Client.dll
+D:\Antony\Projects\WCFDataService\WCFDataService\bin\Microsoft.Data.Services.dll
+D:\Antony\Projects\WCFDataService\WCFDataService\bin\System.Spatial.dll
+D:\Antony\Projects\WCFDataService\WCFDataService\bin\EntityFramework.xml
+D:\Antony\Projects\WCFDataService\WCFDataService\bin\Microsoft.Data.Edm.xml
+D:\Antony\Projects\WCFDataService\WCFDataService\bin\Microsoft.Data.OData.xml
+D:\Antony\Projects\WCFDataService\WCFDataService\bin\Microsoft.Data.Services.xml
+D:\Antony\Projects\WCFDataService\WCFDataService\bin\Microsoft.Data.Services.Client.xml
+D:\Antony\Projects\WCFDataService\WCFDataService\bin\System.Spatial.xml
+D:\Antony\Projects\WCFDataService\WCFDataService\obj\Debug\WCFDataService.csprojResolveAssemblyReference.cache
+D:\Antony\Projects\WCFDataService\WCFDataService\obj\Debug\WCFDataService.dll
+D:\Antony\Projects\WCFDataService\WCFDataService\obj\Debug\WCFDataService.pdb

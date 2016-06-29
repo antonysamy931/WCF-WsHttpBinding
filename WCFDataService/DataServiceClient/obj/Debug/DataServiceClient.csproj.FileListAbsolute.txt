@@ -1,0 +1,14 @@
+D:\Antony\Projects\WCFDataService\DataServiceClient\bin\Debug\DataServiceClient.exe.config
+D:\Antony\Projects\WCFDataService\DataServiceClient\bin\Debug\DataServiceClient.exe
+D:\Antony\Projects\WCFDataService\DataServiceClient\bin\Debug\DataServiceClient.pdb
+D:\Antony\Projects\WCFDataService\DataServiceClient\bin\Debug\Microsoft.Data.Edm.dll
+D:\Antony\Projects\WCFDataService\DataServiceClient\bin\Debug\Microsoft.Data.OData.dll
+D:\Antony\Projects\WCFDataService\DataServiceClient\bin\Debug\Microsoft.Data.Services.Client.dll
+D:\Antony\Projects\WCFDataService\DataServiceClient\bin\Debug\System.Spatial.dll
+D:\Antony\Projects\WCFDataService\DataServiceClient\bin\Debug\Microsoft.Data.Edm.xml
+D:\Antony\Projects\WCFDataService\DataServiceClient\bin\Debug\Microsoft.Data.OData.xml
+D:\Antony\Projects\WCFDataService\DataServiceClient\bin\Debug\Microsoft.Data.Services.Client.xml
+D:\Antony\Projects\WCFDataService\DataServiceClient\bin\Debug\System.Spatial.xml
+D:\Antony\Projects\WCFDataService\DataServiceClient\obj\Debug\DataServiceClient.exe
+D:\Antony\Projects\WCFDataService\DataServiceClient\obj\Debug\DataServiceClient.pdb
+D:\Antony\Projects\WCFDataService\DataServiceClient\obj\Debug\DataServiceClient.csprojResolveAssemblyReference.cache

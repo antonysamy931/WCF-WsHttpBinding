@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFTest.Ws2007HttpBinding.Transport.Security.Example.Service", "WCFTest.Ws2007HttpBinding.Transport.Security.Example.Service\WCFTest.Ws2007HttpBinding.Transport.Security.Example.Service.csproj", "{F9598DA6-08F2-4D55-8DC9-95EE7D842106}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplicationWcfTransportClient", "ConsoleApplicationWcfTransportClient\ConsoleApplicationWcfTransportClient.csproj", "{F6126AAB-EE08-49C2-87A8-4B80ADFC92D0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2EEF4E65-EBD8-4DE3-8A37-5CACA4F56FC3} = {2EEF4E65-EBD8-4DE3-8A37-5CACA4F56FC3}
+		{F9598DA6-08F2-4D55-8DC9-95EE7D842106} = {F9598DA6-08F2-4D55-8DC9-95EE7D842106}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFTest.Ws2007HttpBinding.Transport.Certificate.Security.Example.Service", "WCFTest.Ws2007HttpBinding.Transport.Certificate.Security.Example.Service\WCFTest.Ws2007HttpBinding.Transport.Certificate.Security.Example.Service.csproj", "{2EEF4E65-EBD8-4DE3-8A37-5CACA4F56FC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9598DA6-08F2-4D55-8DC9-95EE7D842106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9598DA6-08F2-4D55-8DC9-95EE7D842106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9598DA6-08F2-4D55-8DC9-95EE7D842106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9598DA6-08F2-4D55-8DC9-95EE7D842106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6126AAB-EE08-49C2-87A8-4B80ADFC92D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6126AAB-EE08-49C2-87A8-4B80ADFC92D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6126AAB-EE08-49C2-87A8-4B80ADFC92D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6126AAB-EE08-49C2-87A8-4B80ADFC92D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EEF4E65-EBD8-4DE3-8A37-5CACA4F56FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EEF4E65-EBD8-4DE3-8A37-5CACA4F56FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EEF4E65-EBD8-4DE3-8A37-5CACA4F56FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EEF4E65-EBD8-4DE3-8A37-5CACA4F56FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

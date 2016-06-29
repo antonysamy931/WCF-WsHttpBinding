@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AntonyModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="AntonyEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Table_1" EntityType="AntonyModel.Table_1" />
+    <EntitySet Name="Depts" EntityType="AntonyModel.Dept" />
+    <EntitySet Name="ChildTables" EntityType="AntonyModel.ChildTable" />
+    <EntitySet Name="ParentTables" EntityType="AntonyModel.ParentTable" />
+    <AssociationSet Name="FK__ChildTabl__Paren__108B795B" Association="AntonyModel.FK__ChildTabl__Paren__108B795B">
+      <End Role="ParentTable" EntitySet="ParentTables" />
+      <End Role="ChildTable" EntitySet="ChildTables" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Table_1">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Dept">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Dept1" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ChildTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Age" />
+    <Property Type="Int32" Name="ParentId" />
+    <NavigationProperty Name="ParentTable" Relationship="AntonyModel.FK__ChildTabl__Paren__108B795B" FromRole="ChildTable" ToRole="ParentTable" />
+  </EntityType>
+  <EntityType Name="ParentTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ChildTables" Relationship="AntonyModel.FK__ChildTabl__Paren__108B795B" FromRole="ParentTable" ToRole="ChildTable" />
+  </EntityType>
+  <Association Name="FK__ChildTabl__Paren__108B795B">
+    <End Type="AntonyModel.ParentTable" Role="ParentTable" Multiplicity="0..1" />
+    <End Type="AntonyModel.ChildTable" Role="ChildTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ParentTable">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ChildTable">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

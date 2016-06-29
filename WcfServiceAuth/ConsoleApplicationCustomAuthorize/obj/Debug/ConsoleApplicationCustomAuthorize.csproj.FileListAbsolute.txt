@@ -1,0 +1,5 @@
+D:\Antony\Projects\WcfServiceAuth\ConsoleApplicationCustomAuthorize\bin\Debug\ConsoleApplicationCustomAuthorize.exe.config
+D:\Antony\Projects\WcfServiceAuth\ConsoleApplicationCustomAuthorize\bin\Debug\ConsoleApplicationCustomAuthorize.exe
+D:\Antony\Projects\WcfServiceAuth\ConsoleApplicationCustomAuthorize\bin\Debug\ConsoleApplicationCustomAuthorize.pdb
+D:\Antony\Projects\WcfServiceAuth\ConsoleApplicationCustomAuthorize\obj\Debug\ConsoleApplicationCustomAuthorize.exe
+D:\Antony\Projects\WcfServiceAuth\ConsoleApplicationCustomAuthorize\obj\Debug\ConsoleApplicationCustomAuthorize.pdb
